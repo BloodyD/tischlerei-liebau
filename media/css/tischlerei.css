@@ -10,3 +10,7 @@ body{
 .centered{
 	text-align: center !important;
 }
+
+#lightbox-container-image-data-box{
+	margin-bottom: 20px !important;
+}
