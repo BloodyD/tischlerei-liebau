@@ -1,37 +1,53 @@
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<?php 
+  function renderHeader($value = '0')
+  {
+    echo "
+<div class='navbar navbar-fixed-top'>
+  <div class='navbar-inner'>
+    <div class='container'>
+      <a class='btn btn-navbar' data-toggle='collapse' data-target='.nav-collapse'>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
       </a>
-      <a class="brand" href=<?php echo homeLink(); ?>>Tischlerei Liebau</a>
-      <div class="nav-collapse">
-        <ul class="nav">
-          <li class="active"><a href=<?php echo homeLink(); ?>>Startseite</a></li>
-          <li><a href=<?php echo referenzenLink(); ?>>Referenzen</a></li>
-          <li><a href=<?php echo kontaktLink(); ?>>Kontakt</a></li>
-          <li><a href=<?php echo impressumLink(); ?>>Impressum</a></li>
-        </ul>
-        <!--<form class="navbar-search pull-left" action="">
-          <input type="text" class="search-query span2" placeholder="Search">
-        </form>
-        <ul class="nav pull-right">
-          <li><a href="#">Link</a></li>
-          <li class="divider-vertical"></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
-        </ul>-->
+      <a class='brand' href=".homeLink().">Tischlerei Liebau</a>
+      <div class='nav-collapse'>
+        <ul class='nav'>";
+
+      echo "<li";
+      if($value=='0'){echo " class='active' ";} 
+      echo "><a href=".homeLink().">
+        <i class='icon-home icon-white'></i> Startseite</a></li>";
+      echo "<li"; 
+      if($value=='1'){echo " class='active' ";} 
+      echo "><a href=".referenceLink().">
+        <i class='icon-book icon-white'></i> Referenzen</a></li>";
+      echo "<li";
+      if($value=='2'){echo " class='active' ";} 
+      echo "><a href=".contactLink().">
+        <i class='icon-user icon-white'></i> Kontakt</a></li>";
+      echo "<li";
+      if($value=='3'){echo " class='active' ";} 
+      echo "><a href=".imprintLink().">
+        <i class='icon-info-sign icon-white'></i> Impressum</a></li>";
+    echo "
+    <li class='divider-vertical'></li>
+    </ul>
+
+    <ul class='nav pull-right'>
+      <li class='divider-vertical'></li>
+      <li>
+        <a href='mailto:kontakt@tischlerei-liebau.de'>
+        <i class='icon-envelope icon-white'></i> E-Mail senden</a>
+      </li>
+
+      <li class='divider-vertical'></li>
+
+    </ul>
       </div><!-- /.nav-collapse -->
     </div>
   </div><!-- /navbar-inner -->
-</div>
+</div>";
+  }
+
+ ?>

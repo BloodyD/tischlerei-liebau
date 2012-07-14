@@ -17,13 +17,13 @@
   function homeLink(){
     return "/tischlerei-liebau/index.php";
   }
-  function referenzenLink(){
+  function referenceLink(){
     return homeLink()."?".arg()."=1";
   }
-  function kontaktLink(){
+  function contactLink(){
     return homeLink()."?".arg()."=2";
   }
-  function impressumLink(){
+  function imprintLink(){
     return homeLink()."?".arg()."=3";
   }
 
@@ -65,7 +65,7 @@
             echo "<div class='row-fluid'>";
           }
           echo "<div class='span".(12/$picsInRow)."'>";
-          echo "<a href='".$folderName."big/".getBigPictureName($file)."' class='thumbnail' rel='lightbox'>
+          echo "<a href='".$folderName."big/".getBigPictureName($file)."' class='thumbnail well' rel='lightbox'>
             <img src='".$folderName.$file."'>
           </a></div>";
           if((($picNumber % $picsInRow) == $picsInRow-1) || ($picNumber == $picCount-1)){

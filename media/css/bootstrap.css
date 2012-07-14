@@ -676,7 +676,7 @@ table {
   line-height: 18px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #889AD6;
 }
 .table th {
   font-weight: bold;
@@ -700,7 +700,7 @@ table {
   padding: 4px 5px;
 }
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #889AD6;
   border-collapse: separate;
   *border-collapse: collapsed;
   border-left: 0;
@@ -710,7 +710,7 @@ table {
 }
 .table-bordered th,
 .table-bordered td {
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #889AD6;
 }
 .table-bordered caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
@@ -752,11 +752,11 @@ table {
 }
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #C4c4c4;
 }
 .table tbody tr:hover td,
 .table tbody tr:hover th {
-  background-color: #f5f5f5;
+  background-color: #D5BEA5;
 }
 table .span1 {
   float: none;
@@ -3990,7 +3990,7 @@ a.thumbnail:hover {
 }
 .accordion-group {
   margin-bottom: 2px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #889AD6;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -4007,7 +4007,7 @@ a.thumbnail:hover {
 }
 .accordion-inner {
   padding: 9px 15px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #889AD6;
 }
 .carousel {
   position: relative;

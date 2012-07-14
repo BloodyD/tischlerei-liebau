@@ -1,5 +1,6 @@
 <?php
 include 'helper.php';
+include 'navbar.php';
 
 echo '<!DOCTYPE html PUBLIC>
 <html lang="de-De">
@@ -21,12 +22,13 @@ echo '<!DOCTYPE html PUBLIC>
 </head>
 <body  data-offset="50">
 ';
-include 'navbar.php';
+$active = getSite($_GET);
+renderHeader($active);
 echo '
 <div class="container">
   <div class="content well">';
 
-switch (intval(getSite($_GET))) {
+switch (intval($active)) {
     case 0:       // main
         include 'main.php';
         break;

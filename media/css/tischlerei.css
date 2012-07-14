@@ -1,6 +1,8 @@
 body{
 	background-color: #D5BEA5 !important;
 	padding-top: 90px;
+	color: #005580;
+	font-family: Century Gothic;
 }
 
 .content{
@@ -13,4 +15,16 @@ body{
 
 #lightbox-container-image-data-box{
 	margin-bottom: 20px !important;
+}
+
+.label{
+	font-size: 13px !important;
+}
+
+.accordion a:hover{
+	text-decoration: none;
+}
+
+.accordion .well{
+	background-color: #D5BEA5 !important;
 }
