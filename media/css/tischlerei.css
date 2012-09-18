@@ -3,6 +3,7 @@ body{
 	padding-top: 90px;
 	color: #005580;
 	font-family: Century Gothic;
+	background-image: url(../images/background.png) !important;
 }
 
 .content{
